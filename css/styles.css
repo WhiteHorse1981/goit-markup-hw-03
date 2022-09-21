@@ -344,6 +344,8 @@ color: #2196F3;
 
 .footer {
     color: var(--footer-contacts-color);
+    padding-top: 60px;
+    padding-bottom: 0;
 }
 .footer-addres {
     color: var(--primary-backgraund-color);
@@ -354,12 +356,17 @@ color: #2196F3;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    padding-top: 20px;
+    padding-bottom: 60px;
 }
 
-footer .logo {
+.footer .logo {
     color: #ffffff;
 }
 
+.address, .email {
+    padding-bottom: 9px;
+}
 
 /* main секція portfolio-filter */
 .filter-button button,

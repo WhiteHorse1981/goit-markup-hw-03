@@ -166,18 +166,33 @@ color: #2196F3;
 
 
 /* main секція Герой */
+.background-hero {
+    width: 1600px;
+    background-color: var(--footer-hero-background-color);
+}
+
+.main-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 452px;
+}
+
+.hero {
+    display: inline-block;
+    width: 696px;
+    text-align: center;
+}
+
 .hero-title {
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-text-color);
-}
-
-.background-hero {
-    background-color: var(--footer-hero-background-color);
 }
 
 .hero button, .filter-button button {
@@ -185,10 +200,20 @@ color: #2196F3;
 }
 
 .hero button {
-font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.06em;
+    width: 216px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    color: var(--title-text-color);
+    background-color: var(--primary-backgraund-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 30px;  /*в макеті 32px переносе послугу на новий рядок*/
 }
 
 .hero button:hover,
@@ -199,9 +224,27 @@ letter-spacing: 0.06em;
 }
 
 /* main секція Рішення для бізнесу */
+.business-title {
+    text-align: center;
+}
+
 .business-title, .title {
     color: var(--title-text-color);
 }
+
+.solutions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.solutions .item {
+    width: calc((100% - 90px) / 4);
+}
+
+.solutions .item:not(:last-child) {
+    margin-right: 30px;
+}
+
 
 .solutions h3 {
     font-weight: 700;
@@ -209,6 +252,7 @@ letter-spacing: 0.06em;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .solutions p {

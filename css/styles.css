@@ -73,6 +73,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
     
 }
 
+/* main */
+.main {
+    width: 1600px;
+}
+
 
 /* nav, header */
 header .site-nav,  header .contacts-header {
@@ -84,6 +89,7 @@ header .site-nav,  header .contacts-header {
 
 .page-header {
     border-bottom: 1px solid #ECECEC;
+    width: 1600px;
 }
 
 /* main-nav */
@@ -340,6 +346,7 @@ color: #2196F3;
 /* footer */
 .background {
     background-color: var(--footer-hero-background-color);
+    width: 1600px;
 }
 
 .footer {
